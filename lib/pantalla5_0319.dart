@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Pantalla4_0319 extends StatelessWidget {
+class Pantalla5_0319 extends StatelessWidget {
+  const Pantalla5_0319({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Pantalla4 Beltrán 0319",
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: Colors.blueAccent,
+      appBar: AppBar(
+        title: Text(
+          "Pantalla5 Beltrán 0319",
+          style: TextStyle(color: Colors.white),
         ),
-        body: Center(
-            child: Column(
+        backgroundColor: Colors.deepPurple,
+      ),
+      body: Center(
+        child: Column(
           children: [
             Text(
               'Jose Carlos Beltran Gamez',
@@ -22,38 +24,15 @@ class Pantalla4_0319 extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(30),
-              width: double.infinity,
-              height: 160,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                gradient: new LinearGradient(
-                  colors: [
-                    Color(0xff03509a),
-                    Color(0xff2685ff),
-                  ],
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                  stops: [0.25, 0.90],
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xFF101012),
-                    offset: Offset(-12, 12),
-                    blurRadius: 18,
-                  ),
-                ],
-              ),
-              alignment: Alignment.centerLeft, //to align its child
-              padding: EdgeInsets.all(20),
+              color: Color(0xffa88acf),
+              padding: const EdgeInsets.all(15),
+              margin: const EdgeInsets.only(left: 40, top: 40),
+              width: 250,
+              height: 250,
+              alignment: Alignment.bottomRight,
               child: Text(
-                'Challenge',
-                style: TextStyle(
-                  fontSize: 46,
-                  color: Color(0xffffffff),
-                  fontWeight: FontWeight.w200,
-                  fontStyle: FontStyle.italic,
-                ),
+                'Text',
+                style: TextStyle(fontSize: 32, color: Color(0xff62049a)),
               ),
             ),
             Text(
@@ -64,6 +43,8 @@ class Pantalla4_0319 extends StatelessWidget {
               ),
             ),
           ],
-        )));
+        ),
+      ),
+    );
   }
 }
