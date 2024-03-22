@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-//Pantalla2_0319
-class Pantalla2_0319 extends StatelessWidget {
-  const Pantalla2_0319({Key? key}) : super(key: key);
+class Pantalla9_0319 extends StatelessWidget {
+  const Pantalla9_0319({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Pantalla2 Beltrán 0319",
+          "Pantalla9 Beltrán 0319",
+          style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.amber,
+        backgroundColor: Color(0xff2789b0),
       ),
       body: Center(
         child: Column(
@@ -24,25 +24,17 @@ class Pantalla2_0319 extends StatelessWidget {
               ),
             ),
             Container(
-              height: 130,
-              width: double.infinity,
+              margin: EdgeInsets.all(40),
+              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Colors.brown,
+                color: Color(0xff2789b0),
                 borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(50),
-                  bottomLeft: Radius.circular(50),
+                  topRight: Radius.circular(40.0),
+                  bottomLeft: Radius.circular(40.0),
                 ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xAA6EB1E6),
-                    offset: Offset(9, 9),
-                    blurRadius: 6,
-                  ),
-                ],
               ),
-              alignment: Alignment.center,
               child: Text(
-                'I am a header',
+                'I am a text',
                 style: TextStyle(
                   fontSize: 38,
                   color: Colors.white,
@@ -50,7 +42,7 @@ class Pantalla2_0319 extends StatelessWidget {
               ),
             ),
             Text(
-              'Header mat. 21308051280319',
+              'Container Mat. 21308051280319',
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.brown,
@@ -60,5 +52,5 @@ class Pantalla2_0319 extends StatelessWidget {
         ),
       ),
     );
-  } //widgets
-} //pantalla2
+  }
+}

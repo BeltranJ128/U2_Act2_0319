@@ -1,56 +1,52 @@
 import 'package:flutter/material.dart';
 
-//Pantalla2_0319
-class Pantalla2_0319 extends StatelessWidget {
-  const Pantalla2_0319({Key? key}) : super(key: key);
+class Pantalla14_0319 extends StatelessWidget {
+  const Pantalla14_0319({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Pantalla2 Beltrán 0319",
+          "Pantalla14 Beltrán 0319",
+          style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.brown,
       ),
       body: Center(
         child: Column(
           children: [
             Text(
-              'Jose Carlos Beltran Gamez',
+              'Container Mat. 21308051280319',
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.brown,
               ),
             ),
             Container(
-              height: 130,
-              width: double.infinity,
+              margin: EdgeInsets.all(40),
+              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Colors.brown,
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(50),
-                  bottomLeft: Radius.circular(50),
-                ),
+                color: Color(0xfff9b994),
+                borderRadius: BorderRadius.circular(30.0),
                 boxShadow: [
                   BoxShadow(
-                    color: Color(0xAA6EB1E6),
-                    offset: Offset(9, 9),
+                    color: Color(0xff777777),
+                    offset: Offset(7, 7),
                     blurRadius: 6,
                   ),
                 ],
               ),
-              alignment: Alignment.center,
               child: Text(
-                'I am a header',
+                'I am a text',
                 style: TextStyle(
                   fontSize: 38,
-                  color: Colors.white,
+                  color: Color(0xff9a4704),
                 ),
               ),
             ),
             Text(
-              'Header mat. 21308051280319',
+              'Container Mat. 21308051280319',
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.brown,
@@ -60,5 +56,5 @@ class Pantalla2_0319 extends StatelessWidget {
         ),
       ),
     );
-  } //widgets
-} //pantalla2
+  }
+}
