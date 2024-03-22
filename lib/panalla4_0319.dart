@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Pantalla9_0319 extends StatelessWidget {
-  const Pantalla9_0319({Key? key}) : super(key: key);
-
+class Pantalla4_0319 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Pantalla9 Beltrán 0319",
-          style: TextStyle(color: Colors.white),
+        appBar: AppBar(
+          title: Text(
+            "Pantalla4 Beltrán 0319",
+            style: TextStyle(color: Colors.white),
+          ),
+          backgroundColor: Colors.blueAccent,
         ),
-        backgroundColor: Color(0xff2789b0),
-      ),
-      body: Center(
-        child: Column(
+        body: Center(
+            child: Column(
           children: [
             Text(
               'Jose Carlos Beltran Gamez',
@@ -24,20 +22,37 @@ class Pantalla9_0319 extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(40),
-              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.all(30),
+              width: double.infinity,
+              height: 160,
               decoration: BoxDecoration(
-                color: Color(0xff2789b0),
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(40.0),
-                  bottomLeft: Radius.circular(40.0),
+                borderRadius: BorderRadius.circular(20),
+                gradient: new LinearGradient(
+                  colors: [
+                    Color(0xff03509a),
+                    Color(0xff2685ff),
+                  ],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                  stops: [0.25, 0.90],
                 ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0xFF101012),
+                    offset: Offset(-12, 12),
+                    blurRadius: 18,
+                  ),
+                ],
               ),
+              alignment: Alignment.centerLeft, //to align its child
+              padding: EdgeInsets.all(20),
               child: Text(
-                'I am a text',
+                'Challenge',
                 style: TextStyle(
-                  fontSize: 38,
-                  color: Colors.white,
+                  fontSize: 46,
+                  color: Color(0xffffffff),
+                  fontWeight: FontWeight.w200,
+                  fontStyle: FontStyle.italic,
                 ),
               ),
             ),
@@ -49,8 +64,6 @@ class Pantalla9_0319 extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
-    );
+        )));
   }
 }
